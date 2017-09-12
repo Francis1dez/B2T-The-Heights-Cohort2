@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function display()
+{
+var z=prompt("Hell my name is...");
+if(z!=null)
+{
+document.getElementById("demo").innerHTML=" thank you "+z+"..";
+document.getElementById("case").style.display='block';
+}
+else
+document.getElementById("demo").innerHTML=" thank you ";
+}
+
+</script>
+</head>
+<body>
+<p id="demo">click on the button.....</p>
+<button type="button" onclick="display()">submit</button>
+<div id="case" style="display:none">
+<input type="text" id="aaa" name="myText" onDblClick="dis()">enter your mark
+</div>
+</body>
+</html> 
