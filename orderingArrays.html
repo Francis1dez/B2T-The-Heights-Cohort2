@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+	<html>
+	
+	
+	<body>
+		<p>Click on the button to order the array containing my favorite fruits.</p>
+		<button onclick="myfunction()">Click</button>
+		<p id= "example"></p>
+		<script>
+			var fruits = [" Cherrys ", " Apples ", " Bananas ", " Strawberries" , " Coconuts "];
+			document.getElementById("example").innerHTML = fruits;
+
+			function myFunction(){
+				fruits.sort();
+				document.getElementById("example").innerHTML = fruits;
+
+				}
+
+		</script>
+
+	</body>
+</html>
