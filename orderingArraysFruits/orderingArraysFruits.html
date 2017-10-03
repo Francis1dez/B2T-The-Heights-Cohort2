@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click The Button to have sort in decending order.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="examples"></p>
+
+<script>
+	// created variable that contains fruits
+var fruits = [" Cococuts ", " Bananas ", " Cherries ", " Strawberries ", "Berries ", " Mangos "];
+//summon data by its id name examples
+document.getElementById("examples").innerHTML = fruits;
+
+// using functions to sort fruits in reverse
+function myFunction() {
+    fruits.sort();
+    fruits.reverse();
+    document.getElementById("examples").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
