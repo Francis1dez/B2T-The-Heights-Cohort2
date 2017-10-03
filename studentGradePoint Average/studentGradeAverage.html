@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find the Students Average</title>
+        <p>Grade Point Average of all Students</p>
+        <p>Grade Point Average of all students should be a B </p>
+    </head>
+    <body>
+        <script type="text/javascript">
+            //create an array with student grades.
+            var grade = [80, 77, 88, 95, 68];
+            //create an array to contain the grade point average.
+            var theAverage = 0;
+            //create an array to contain the sum of all numbers.
+            var getGrades = 0;
+            //Instruct to get all grades and add it to getGrades
+            for(var i = 0; i < grade.length; i++){
+                getGrades += grade[i];
+            }
+            //instruct  JS to get the sum of getGrades and apply division operator to get the average of the sum of all grades.
+            theAverage = getGrades/grade.length;
+            //console print the average of grades.
+            var letterGrade = "";
+            if (theAverage < 60){
+                letterGrade = "F";
+            }else if (theAverage <= 70) {
+                letterGrade = "D";
+            }else if(theAverage < 80) {
+                letterGrade = "C";
+            }else if (theAverage < 90) {
+                letterGrade = "B"
+            }else if (theAverage >= 90) {
+                letterGrade = "A";
+            }
+            console.log(letterGrade);
+        </script>
+    </body>
+</html>
