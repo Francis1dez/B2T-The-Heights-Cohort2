@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays of Colors and by Position</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            //create a variable that contains colors
+            var color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+            var o = ["th", "st", "nd", "rd"];
+            //Places Suffix to Sort by order
+            for (var i = 0; i < color.length; i++){
+               
+                if(i < 3){
+                    var suffix = o[i + 1]
+                } else {
+                    var suffix = o[0];
+                }
+                //Outputing on the console log the colors in numeric order
+                console.log((i + 1 + suffix + " choice is ") + color[i]);
+            }
+        </script>
+    </body>
+</html>
