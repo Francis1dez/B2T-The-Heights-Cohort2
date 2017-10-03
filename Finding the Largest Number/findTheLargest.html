@@ -7,11 +7,11 @@
         <script type="text/javascript">
             //Create an empty array insert the values provided by the user
             var numbers = [0, 0, 0];
-            //Assigning numeric values to empt arrays
+            //Assigning values to empt arrays
             numbers[0] = prompt("Give me the first number");
             numbers[1] = prompt("Give me the second number");
             numbers[2] = prompt("Give me the third number");
-            //Using Math.max() to find the largest number in the array.
+            //used math.max function for array with relatively few elements.
             var theLargest = Math.max.apply(Math, numbers);
             //Printing the largest value to the console
             console.log(theLargest + " is the largest number");
