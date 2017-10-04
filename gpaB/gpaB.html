@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find the Average of Total Grades</title>
+	<p>Average Grade is B</p>
+	<p>Good Job Class!!!!!!!</p>
+</head>
+<body>
+	<script type="text/javascript">
+	//Need to create an arrays with numeric values.
+	var grade = [80, 77, 88, 95, 68];
+	//Need to create an array to contain the grade point average.
+	var theAverageGrade = 0;
+	//Need to create an array that will contain all numbers.
+	var getTheAverageGrade = 0;
+	//instruct to get all grades and add it to getTheAverageGrade.
+	for(var i = 0; i < grade.length; i++){
+		getTheAverageGrade += grade[i];
+
+	}
+	//apply function to do the divisional math
+	theAverageGrade = getTheAverageGrade/grade.length
+	//console output average grade.
+	var letterGrade = "";
+	if (theAverageGrade < 60){
+		letterGrade = "F";
+	}else if(theAverageGrade <= 70){
+		letterGrade ="D";
+	}else if (theAverageGrade < 80){
+		letterGrade = "C";
+	}else if (theAverageGrade < 90) {
+		letterGrade = "B";
+	}else if (theAverageGrade >=90){
+		letterGrade = "A";
+	}
+	console.log(letterGrade);
+
+	</script>
+
+</body>
+</html>
