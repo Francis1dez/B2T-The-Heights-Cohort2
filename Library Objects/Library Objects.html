@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Library Objects</title>
+
+    </head>
+
+    <body>
+
+        <h2 id="display"></h2>
+
+        <script type="text/javascript">
+
+            //Declaring the array of objects containing the library books
+
+            var library =[
+
+                {author: 'Puff Daddy', title: 'No way out', readingStatus: true},
+
+                {author: 'Francis Fernandez', title: 'Lingo', readingStatus: true},
+
+                {author: 'Stephen Case', title: 'The Next Wave', readingStatus: false}
+
+            ];
+
+            //A loop to iterate through each object of the library array and check if the book has been read or not to display on the webpage
+
+            for(var i in library){
+
+                if(library[i].readingStatus == true){
+
+                    document.getElementById('display').innerHTML += ('Already read ' + library[i].title + ' by ' + library[i].author + '<br/>');
+
+                }else{
+
+                    document.getElementById('display').innerHTML += ('You still need to read ' + library[i].title + ' by ' + library[i].author + '<br/>');
+
+                }
+
+            }
+
+        </script>
