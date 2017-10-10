@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Appending to Tables</title>
+
+    </head>
+
+    <body>
+
+        <table id="LaMesa" border="3px black">
+
+            <tr>
+
+                <td>Pablo</td>
+
+                <td>Escobar</td>
+
+            </tr>
+
+        </table>
+
+        <br>
+
+        <form>
+
+            <!-- Get the first and last name  -->
+
+            First name: <input type="text" id="col1" value="Al">
+
+            Last name: <input type="text" id="col2" value="Pacino">
+
+        </form>
+
+        <br>
+
+        <input type="button" onclick="insertRow()" value="Insert Row">
+
+        <!-- Summon the insertRow function everytime that the user presses the button -->
+
+        <script type="text/javascript">
+
+
+
+            function insertRow(){
+
+                //Get the value of both form input elements and assign them to firstName and lastName variables
+
+                var firstName = document.getElementById('col1').value;
+
+                var lastName = document.getElementById('col2').value;
+
+                //Create a new deathrow, append it to La Mesa
+
+                var newTr = document.createElement('tr');
+
+                document.getElementById('theTable').appendChild(newTr);
+
+                //Create to new Mesa datas and assign the innerHTML value to the input value
+
+                var newTd = document.createElement('td');
+
+                var newTd2 = document.createElement('td');
+
+                newTd.innerHTML = firstName;
+
+                newTd2.innerHTML = lastName;
+
+                //Append the name table datas to the desired row
+
+                newTr.appendChild(newTd);
+
+                newTr.appendChild(newTd2);
+
+            }
+
+        </script>
+
+    </body>
+
+</html>
+
