@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display of Names</title>
+</head>
+<body>
+	<form action="index.html" method="post">
+		<!-- Summon first and last name and submit them but clicking on the button connected to the func -->
+
+		First Name: <input type="text" id="fname" value="Barrack">
+		Last Name: <input type="text" id ="lastname=" value="Obama">
+		<input type= 'button' value = "Submit" onclick="getFormValue()">
+	</form>
+
+		<!-- Empty Head element to print to it -->
+		<h2 id="displayFull"></h2>
+
+		<script type="text/javascript">
+	//Retrieve the Value of the data and assign them to a variable
+	//Connect both values and later printing it = to the screen using DOM
+	
+		function getFormValue(){
+			var firstName = document.getElementById ('fname').value;
+			var lastName = document.getElementById ('lname').value;
+			var fullName = fname + ' ' + lname;
+			document.getElementById ('displayFull').innerHTML = ('Hello ' + fullName);
+
+							}
+
+
+
+
+
+	</script>
+
+	
+
+	
+
+</body>
+</html>
